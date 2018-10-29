@@ -3,43 +3,48 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
 
+    <item android:title="การท่องเที่ยวเชิงอนุรักษ์">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_meaning"
+                    android:icon="@drawable/ic_camera_alt_black_24dp"
+                    android:title="ความหมายการท่องเที่ยวเชิงอนุรักษ์"/>
+                <item
+                    android:id="@+id/nav_purpose"
+                    android:icon="@drawable/ic_purpose"
+                    android:title="จุดประสงค์การท่องเที่ยวเชิงอนุรักษ์"/>
+            </group>
+        </menu>
+    </item>
+
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title=""/>
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_camera_alt_black_24dp"
-            android:title="Gallery"/>
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow"/>
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools"/>
+            android:id="@+id/nav_samut_prakan"
+            android:icon="@drawable/ic_samut_prakan"
+            android:title="จังหวัดสมุทรปราการ"/>
     </group>
 
     <item android:title="สถานทีท่องเที่ยวเชิงอนุรักษ์ในจังหวัดสมุทรปราการ">
         <menu>
-            <item
-                android:id="@+id/nav_place_1"
-                android:icon="@drawable/ic_menu_share"
-                android:title="ตลาดน้ำบางน้ำผึ้ง"/>
-            <item
-                android:id="@+id/nav_place_2"
-                android:icon="@drawable/ic_menu_send"
-                android:title="คุ้งบางกะเจ้า"/>
-            <item
-                android:id="@+id/nav_place_3"
-                android:icon="@drawable/ic_menu_share"
-                android:title="สถานตากอากาศบางปู"/>
-            <item
-                android:id="@+id/nav_place_4"
-                android:icon="@drawable/ic_menu_send"
-                android:title="วัดอโศการาม"/>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_place_1"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="ตลาดน้ำบางน้ำผึ้ง"/>
+                <item
+                    android:id="@+id/nav_place_2"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="คุ้งบางกะเจ้า"/>
+                <item
+                    android:id="@+id/nav_place_3"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="สถานตากอากาศบางปู"/>
+                <item
+                    android:id="@+id/nav_place_4"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="วัดอโศการาม"/>
+            </group>
         </menu>
     </item>
 
