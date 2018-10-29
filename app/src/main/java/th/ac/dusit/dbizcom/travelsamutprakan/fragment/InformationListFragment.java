@@ -152,16 +152,6 @@ public class InformationListFragment extends Fragment {
                             Toast.makeText(getActivity(), "ข้อมูลร้านเช่าจักรยาน คุ้งบางกะเจ้า", Toast.LENGTH_SHORT).show();
                             //todo:
                             break;
-                        case 2:
-                            // ข้อมูลร้านเช่าจักรยาน สถานตากอากาศบางปู
-                            Toast.makeText(getActivity(), "ข้อมูลร้านเช่าจักรยาน สถานตากอากาศบางปู", Toast.LENGTH_SHORT).show();
-                            //todo:
-                            break;
-                        case 3:
-                            // ข้อมูลร้านเช่าจักรยาน วัดอโศการาม
-                            Toast.makeText(getActivity(), "ข้อมูลร้านเช่าจักรยาน วัดอโศการาม", Toast.LENGTH_SHORT).show();
-                            //todo:
-                            break;
                     }
                 }
             }));
@@ -184,11 +174,6 @@ public class InformationListFragment extends Fragment {
                         case 2:
                             // ข้อมูลร้านอาหาร สถานตากอากาศบางปู
                             Toast.makeText(getActivity(), "ข้อมูลร้านอาหาร สถานตากอากาศบางปู", Toast.LENGTH_SHORT).show();
-                            //todo:
-                            break;
-                        case 3:
-                            // ข้อมูลร้านอาหาร วัดอโศการาม
-                            Toast.makeText(getActivity(), "ข้อมูลร้านอาหาร วัดอโศการาม", Toast.LENGTH_SHORT).show();
                             //todo:
                             break;
                     }
