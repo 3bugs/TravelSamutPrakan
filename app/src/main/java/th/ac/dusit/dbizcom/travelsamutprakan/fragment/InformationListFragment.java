@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,7 +64,7 @@ public class InformationListFragment extends Fragment {
                     case 0:
                         // ข้อมูลแหล่งท่องเที่ยว ตลาดน้ำบางน้ำผึ้ง
                         Toast.makeText(getActivity(), "ข้อมูลแหล่งท่องเที่ยว ตลาดน้ำบางน้ำผึ้ง", Toast.LENGTH_SHORT).show();
-                        //todo:
+                        loadFragment(new Place1TourFragment());
                         break;
                     case 1:
                         // ข้อมูลแหล่งท่องเที่ยว คุ้งบางกะเจ้า
@@ -179,6 +180,21 @@ public class InformationListFragment extends Fragment {
                     }
                 }
             }));
+        }
+    }
+
+    private void loadFragment(Fragment fragment) {
+        if (getActivity() != null) {
+            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+            transaction.setCustomAnimations(
+                    R.anim.enter_from_right,
+                    R.anim.exit_to_left,
+                    R.anim.enter_from_left,
+                    R.anim.exit_to_right
+            );
+            transaction.replace(R.id.fragment_container, fragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
         }
     }
 
